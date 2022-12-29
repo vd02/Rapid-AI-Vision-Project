@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" type="text/css" href="../style.css" />
+    <title>Rapid AI Vision Project</title>
+  </head>
+  <body>
+    <nav class="max-width-1 navigation">
+      <div class="nav-left">
+        <span>
+          <a href="index.html">Rapid AI Vision Project</a>
+        </span>
+      </div>
+      <div class="nav-left">
+        <span>
+          <a href="index.html">Varun Dixit</a>
+        </span>
+      </div>
+    </nav>
+
+    <div class="opt">
+      <a href="/">Upload an Image 📷</a>
+      <a href="index.html">Upload a Video 🎥</a>
+      <a href="../logs/index.html">Database 📝</a>
+    </div>
+    <div class="video-box">
+      <video id="video" width="400" height="320" autoplay></video>
+    </div>
+    <div class="video-opt">
+      <button class="btn" id="start-camera">Start Camera 👉</button>
+      <button class="btn" id="start-record">Start Recording 👉</button>
+      <button class="btn" id="stop-record">Stop Recording 👉</button>
+      <a id="download-video" download="test.webm">Download Video 🤘</a>
+    </div>
+    <script src="video.js"></script>
+  </body>
+</html>
