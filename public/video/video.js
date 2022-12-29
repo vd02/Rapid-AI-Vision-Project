@@ -10,8 +10,11 @@ let blobs_recorded = [];
 
 camera_button.addEventListener("click", async function () {
   camera_stream = await navigator.mediaDevices.getUserMedia({
-    video: true,
     audio: true,
+    video: {
+      width: { ideal: 1920 },
+      height: { ideal: 1080 },
+    },
   });
   video.srcObject = camera_stream;
 });

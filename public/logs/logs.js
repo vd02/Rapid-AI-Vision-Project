@@ -11,7 +11,6 @@ async function getData() {
 
     const dateString = new Date(item.timestamp).toLocaleString();
     date.textContent = dateString;
-    // video.src = item.file;
     image.src = item.image64;
     image.alt = "Sorry! Image not Loading :(";
 
